@@ -92,6 +92,7 @@ body {
     .services {
         background-color: var(--primary);
         color: var(--white);
+        /* text-align: center; */
 
         & > div {
             max-width: var(--max-width);
@@ -127,6 +128,17 @@ body {
                 margin: 0 auto;
                 padding-block: 10px;
             }
+        }
+
+        .services-cta {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cta {
+            background-color: var(--white);
+            color: var(--primary);
+            margin-block: 20px;
         }
     }
 }

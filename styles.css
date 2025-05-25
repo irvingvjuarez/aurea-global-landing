@@ -142,7 +142,7 @@ body {
         }
     }
 
-    .por-que-elegirnos {
+    .sobre-nosotros {
         max-width: var(--max-width);
         margin: 0 auto;
 
@@ -150,13 +150,13 @@ body {
             padding-bottom: 20px;
         }
 
-        .por-que-elegirnos-content {
+        .sobre-nosotros-content {
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
         }
 
-        .por-que-elegirnos-card {
+        .sobre-nosotros-card {
             padding: 20px;
             border: 1px solid var(--primary);
             border-radius: 10px;
@@ -165,7 +165,7 @@ body {
             justify-content: space-between;
             gap: 10px;
             
-            .por-que-elegirnos-card-content {
+            .sobre-nosotros-card-content {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -289,8 +289,8 @@ footer {
             }
         }
 
-        .por-que-elegirnos {
-            .por-que-elegirnos-content {
+        .sobre-nosotros {
+            .sobre-nosotros-content {
                 grid-template-columns: 1fr 1fr;
             }
         }

@@ -167,7 +167,6 @@ body {
         .por-que-elegirnos-container {
             max-width: var(--max-width);
             margin: 0 auto;
-            padding: 30px;
 
             .por-que-elegirnos-items {
                 display: grid;
@@ -198,6 +197,26 @@ body {
                     padding-block: 10px;
                 }
             }
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .title {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta {
+            margin: 0 auto;
         }
     }
 }
@@ -232,6 +251,7 @@ body {
     padding: 10px 20px;
     border-radius: 50px;
     border: none;
+    cursor: pointer;
 }
 
 .cta.white {
@@ -412,6 +432,12 @@ footer {
 
         .services .services-container {
             padding: 30px;
+        }
+
+        .por-que-elegirnos {
+            .por-que-elegirnos-container {
+                padding: 30px;
+            }
         }
     }
 

@@ -98,13 +98,6 @@ body {
             max-width: var(--max-width);
             margin: 0 auto;
         }
-
-        .services-content {
-            .informative-text {
-                color: var(--white);
-                padding-block: 20px;
-            }
-        }
         
         .services-cards {
             display: grid;
@@ -129,26 +122,11 @@ body {
                 padding-block: 10px;
             }
         }
-
-        .services-cta {
-            display: flex;
-            justify-content: center;
-        }
-
-        .cta {
-            background-color: var(--white);
-            color: var(--primary);
-            margin-block: 20px;
-        }
     }
 
     .sobre-nosotros {
         max-width: var(--max-width);
         margin: 0 auto;
-
-        h2 {
-            padding-bottom: 20px;
-        }
 
         .sobre-nosotros-content {
             display: grid;
@@ -181,12 +159,58 @@ body {
             
         }
     }
+
+    .por-que-elegirnos {
+        background-color: var(--primary);
+        color: var(--white);
+
+        .por-que-elegirnos-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 30px;
+
+            .por-que-elegirnos-items {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+
+                .por-que-elegirnos-item {
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid var(--white);
+                    padding-bottom: 20px;
+                }
+
+                .por-que-elegirnos-item ul {
+                    list-style: none;
+                }
+
+                .por-que-elegirnos-item img {
+                    max-height: 100px;
+                    display: block;
+                    padding-block: 10px;
+                }
+
+                .por-que-elegirnos-item-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding-block: 10px;
+                }
+            }
+        }
+    }
 }
 
 .informative-text {
     font-size: 1rem;
     color: var(--primary);
     line-height: 16px;
+    padding-block: 20px;
+}
+
+.informative-text.white {
+    color: var(--white);
 }
 
 .title {
@@ -194,6 +218,10 @@ body {
     font-size: 1.75rem;
     line-height: 2.2rem;
     letter-spacing: 1px;
+}
+
+.title.padding-bottom {
+    padding-bottom: 20px;
 }
 
 .cta {
@@ -204,6 +232,17 @@ body {
     padding: 10px 20px;
     border-radius: 50px;
     border: none;
+}
+
+.cta.white {
+    background-color: var(--white);
+    color: var(--primary);
+    margin-block: 20px;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -294,6 +333,22 @@ footer {
                 grid-template-columns: 1fr 1fr;
             }
         }
+
+        .por-que-elegirnos {
+            .por-que-elegirnos-container {
+                .por-que-elegirnos-items {
+
+                    .por-que-elegirnos-item-content {
+                        flex-direction: row;
+                        text-align: start;
+
+                        img {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .informative-text {
@@ -315,6 +370,21 @@ footer {
         .services {
             .services-cards {
                 grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        .por-que-elegirnos {
+            .por-que-elegirnos-container {
+                .por-que-elegirnos-items {
+                    .por-que-elegirnos-item ul {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 20px;
+                    }
+                    .por-que-elegirnos-item-content {
+                        flex-direction: column;
+                    }
+                }
             }
         }
     }

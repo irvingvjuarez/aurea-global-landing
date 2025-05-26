@@ -1,10 +1,16 @@
-name: Build and Deploy
-on: [push]
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # or master, depending on your default branch name
+
 permissions:
   contents: write
+
 jobs:
   build-and-deploy:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -13,5 +19,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: src # The folder the action should deploy.
+          branch: gh-pages
+          folder: src
+          clean: true
